@@ -5,8 +5,8 @@ import machine
 import time
 
 # ── Configurações ──────────────────────────────────────────────
-SSID       = "NOME_DA_REDE"
-PASSWORD   = "SENHA_DA_REDE"
+SSID       = "DerkZunguza"
+PASSWORD   = "3.141592"
 SERVER_URL = "https://irns.eurekaplatformapi.xyz/data"
 DEVICE_ID  = "esp32-s3-001"
 DHT_PIN    = 4                     # GPIO onde está o DATA do DHT11

@@ -4,7 +4,7 @@ import time
 from sim900 import SIM900
 
 # ── Configurações ──────────────────────────────────────────────
-APN        = "internet"                              # mCel/Tmcel MZ
+APN        = "m-internet"                              # mCel/Tmcel MZ
 # APN      = "internet.movitel.co.mz"               # Movitel MZ
 SERVER_URL = "https://irns.eurekaplatformapi.xyz/data"
 DEVICE_ID  = "esp32-s3-sim900"
