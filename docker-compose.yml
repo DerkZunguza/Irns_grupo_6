@@ -1,0 +1,17 @@
+services:
+  server:
+    build: ./server
+    container_name: iot-server
+    restart: unless-stopped
+    networks:
+      - traefik-public
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.iot.rule=Host(`irns.eurekaplatformapi.xyz`)"
+      - "traefik.http.routers.iot.entrypoints=websecure"
+      - "traefik.http.routers.iot.tls.certresolver=letsencrypt"
+      - "traefik.http.services.iot.loadbalancer.server.port=5000"
+
+networks:
+  traefik-public:
+    external: true
